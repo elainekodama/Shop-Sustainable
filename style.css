@@ -1,0 +1,312 @@
+
+CSS
+.search-click {
+  border: 1px solid #ccc;
+  outline: none;
+  background-size: 22px;
+  background-position: 13px;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 25px;
+  transition: all 0.5s;
+}
+.search-click:focus {
+  width: 300px;
+  padding-left: 50px;
+}
+.search-click {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+}
+.search-click input {
+  background: transparent;
+  border: 1px solid #ccc;
+  outline: none;
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 0%;
+  padding: 10px;
+}
+
+body {
+    background: #e8eaed
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto
+}
+
+.searchbar {
+    position: relative;
+    min-width: 50px;
+    width: 0%;
+    height: 50px;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s
+}
+
+.searchbar-input {
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    background: #6200EA;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0px 55px 0px 20px;
+    font-size: 20px;
+    color: #fff
+}
+
+.searchbar-input::-webkit-input-placeholder {
+    color: #fff
+}
+
+.searchbar-input:-moz-placeholder {
+    color: #fff
+}
+
+.searchbar-input::-moz-placeholder {
+    color: #fff
+}
+
+.searchbar-input:-ms-input-placeholder {
+    color: #fff
+}
+
+.searchbar-icon,
+.searchbar-submit {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 0;
+    font-family: verdana;
+    font-size: 22px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background: #6200EA;
+    border-left: 1px solid white
+}
+
+.searchbar-open {
+    width: 100%
+}
+
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+  .circle{
+    border: 1px solid #556B2F;
+    box-shadow: inset 1px 1px 3px #556B2F;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: relative;
+    margin: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #556B2F;
+}
+.circle:hover{
+    background: #556B2F;
+}
+.circle:active{
+    background: radial-gradient(#556B2F, #556B2F);
+}
+.circle:before,
+.circle:after{
+    content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+}
+/* PLUS */
+.circle.plus:before,
+.circle.plus:after {
+    background:white;
+    box-shadow: 1px 1px 1px #556B2F;
+}
+.circle.plus:before{
+    width: 2px;
+    margin: 3px auto;
+}
+.circle.plus:after{
+    margin: auto 3px;
+    height: 2px;
+    box-shadow: none;
+}
+/* MINUS */
+.circle.minus:before{
+    background: #cc0000;
+    margin: auto 3px;
+    height: 2px;
+    box-shadow: 0px 1px 1px #ffffff9e;
+}
+/* CROSS */
+.circle.cross:after,
+.circle.cross:before{
+    background: #000;
+    margin: auto 4px;
+    height: 2px;
+    transform:rotateZ(45deg);
+    box-shadow: 0px 1px 1px #ffffff9e;
+}
+.circle.cross:after{
+    transform:rotateZ(-45deg);
+}
+
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+.rating,
+.rating2,
+.rating3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.rating>input,
+.rating2>input,
+.rating3>input {
+    display: none
+}
+
+.rating>label,
+.rating2>label,
+.rating3>label {
+    position: relative;
+    width: 1em;
+    font-size: 32px;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before,
+.rating2>label::before,
+.rating3>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating2>label:hover:before,
+.rating3>label:hover:before,
+.rating>label:hover~label:before,
+.rating2>label:hover~label:before,
+.rating3>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before,
+.rating2>input:checked~label:before,
+.rating3>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before,
+.rating2:hover>input:checked~label:before,
+.rating3:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+.vote {
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+} 
+
+
+.vote.on {
+color: #f48024
+}
+.vote2 {
+display: inline-block;
+cursor: pointer;
+color: black;
+} 
+
+
+.vote2.on {
+color: #f48024
+}
+
+.card-design {
+    font-family: 'Cabin', sans-serif;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+#design a,
+#design a:visited {
+    text-decoration: none;
+    color: #000;
+}
+#design a:hover,
+#design a:visited:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.card-design:hover,
+.card-design:visited:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: #000;
+}
+
+
+.checked {
+    color: orange;
+}
+
+.info {
+    background-color: #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    margin: 25px auto 30px  auto;
+
+    width: 70%;
+    font-family: 'Cabin', sans-serif;
+    padding: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.chnge {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+}
+
+
+#chnge-link a,
+#chnge-link a:visited {
+    text-decoration: none;
+    color: #000;
+}
+#chnge-link a:hover,
+#chnge-link a:visited:hover {
+    text-decoration: underline;
+    color: #000;
+}
